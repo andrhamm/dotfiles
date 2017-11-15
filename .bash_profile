@@ -10,7 +10,8 @@ done;
 unset file;
 
 # Add all identities stored in keychain to ssh-agent
-/usr/bin/ssh-add -A
+# This doesn't work on Sierra and higher
+# /usr/bin/ssh-add -A
 
 # Speed up runtime by caching this value
 BREW_PREFIX=$(brew --prefix)
