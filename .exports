@@ -42,33 +42,5 @@ export CSS_DIRECTORY="css"
 # Add DocBook package for XML generation (used for git-subtree)
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
-# EverTrue tools
-export MAVEN_HOME="/usr/local/share/maven"
-
-# Chef configurations
-export KNIFE_CHEF_SERVER="https://api.chef.io/organizations/darksky"
-export KNIFE_CLIENT_KEY="$HOME/.chef/jeffbyrnes.pem"
-export KNIFE_NODE_NAME="jeffbyrnes"
-export KNIFE_VALIDATION_CLIENT_NAME="darksky-validator"
-export KNIFE_VALIDATION_CLIENT_KEY="$HOME/.chef/darksky-validator.pem"
-export AWS_SSH_KEY="ds_aws_dev"
-export AWS_SSH_KEY_ID=$AWS_SSH_KEY
-export AWS_KEYPAIR_NAME="ds_travis_ci"
-export EC2_SSH_KEY_PATH="$HOME/.ssh/${AWS_KEYPAIR_NAME}"
-export CHEF_REPO="$HOME/dev/infrastructure"
-export CHEF_COOKBOOKS="${CHEF_REPO}/cookbooks"
-export TF_VAR_user_name=$KNIFE_NODE_NAME
-export TF_VAR_user_key=$KNIFE_CLIENT_KEY
-
 # AWS stuff
-# export JAVA_HOME="$(/usr/libexec/java_home)"
-export EC2_HOME="$(brew --prefix ec2-api-tools)/libexec"
-export AWS_ELASTICACHE_HOME="$(brew --prefix aws-elasticache)/libexec"
-export AWS_RDS_HOME="$(brew --prefix rds-command-line-tools)/libexec"
-# export AWS_ELB_HOME="/usr/local/Library/LinkedKegs/elb-tools/jars"
-# export EC2_AMITOOL_HOME="${BREW_PREFIX}/Cellar/ec2-ami-tools/1.5.3/libexec"
-# export AWS_CLOUDWATCH_HOME="/usr/local/Library/LinkedKegs/cloud-watch/jars"
-# export SERVICE_HOME="$AWS_CLOUDWATCH_HOME"
-# export AWS_SNS_HOME="/usr/local/Library/LinkedKegs/aws-sns-cli/jars"
-# export AWS_IAM_HOME="/usr/local/opt/aws-iam-tools/jars"
 export AWS_DEFAULT_REGION="us-east-1"

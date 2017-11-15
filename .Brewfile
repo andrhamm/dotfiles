@@ -25,6 +25,9 @@ brew 'wget', args: ['with-iri']
 brew 'vim', args: ['with-override-system-vi']
 brew 'curl'
 
+# Install HTTPie, a better cURL
+brew 'httpie'
+
 brew 'grep'
 brew 'openssh'
 brew 'screen'
@@ -64,9 +67,7 @@ brew 'brew-cask-completion'
 brew 'bundler-completion'
 brew 'docker-completion'
 brew 'gem-completion'
-brew 'kitchen-completion'
 brew 'rake-completion'
-brew 'vagrant-completion'
 
 # Install tldr for more friendly manpages
 tap 'tldr-pages/tldr'
