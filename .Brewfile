@@ -38,15 +38,16 @@ brew 'openssh'
 brew 'screen'
 brew 'zlib'
 
-tap 'homebrew/php'
-brew 'homebrew/php/php71'
-brew 'homebrew/php/php71-mcrypt'
-brew 'homebrew/php/composer'
-brew 'homebrew/php/php-code-sniffer'
-brew 'homebrew/php/php-cs-fixer'
-brew 'homebrew/php/phplint'
-brew 'homebrew/php/phpmd'
-brew 'homebrew/php/phpunit'
+## no longer exists?
+# tap 'homebrew/php'
+# brew 'homebrew/php/php71'
+# brew 'homebrew/php/php71-mcrypt'
+# brew 'homebrew/php/composer'
+# brew 'homebrew/php/php-code-sniffer'
+# brew 'homebrew/php/php-cs-fixer'
+# brew 'homebrew/php/phplint'
+# brew 'homebrew/php/phpmd'
+# brew 'homebrew/php/phpunit'
 
 # Install other useful binaries.
 brew 'ack'
@@ -77,6 +78,7 @@ brew 'tldr-pages/tldr/tldr'
 cask 'macdown'
 
 # GPG agent for signing commits
+cask 'gpg-suite'
 brew 'gpg-agent'
 brew 'pinentry-mac'
 
@@ -113,6 +115,6 @@ cask 'qlmarkdown'
 cask 'quicklook-json'
 cask 'qlprettypatch'
 cask 'quicklook-csv'
-cask 'betterzipql'
+# cask 'betterzipql' # no longer exists?
 cask 'webpquicklook'
 cask 'suspicious-package'
